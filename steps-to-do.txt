@@ -1,0 +1,26 @@
+//Structuring commit messages in Conventional Commits//
+eg:  feat: add the charging option for cars
+
+//Commit message with type, scope, and description://
+fix(homepage): change title width of title
+
+//Commit message with BREAKING CHANGE://
+refactor(api): remove the get api from reservations
+
+BREAKING CHANGE: refactor to use the trip api instead of reservations api
+
+
+*******************************************
+npm init -y
+
+git init
+
+**//Add standard-version to our project//**
+
+npm install --save-dev standard-version
+
+//we also need to add in package.json:
+
+"scripts": {
+  "release": "standard-version"
+}
