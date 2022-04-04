@@ -1,6 +1,6 @@
 {
   "name": "changelog-test-coe",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Testing changelog automation",
   "main": "index.js",
   "scripts": {
