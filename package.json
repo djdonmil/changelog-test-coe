@@ -1,0 +1,24 @@
+{
+  "name": "changelog-test-coe",
+  "version": "1.1.0",
+  "description": "Testing changelog automation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "standard-version"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djdonmil/changelog-test-coe.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/djdonmil/changelog-test-coe/issues"
+  },
+  "homepage": "https://github.com/djdonmil/changelog-test-coe#readme",
+  "devDependencies": {
+    "standard-version": "^9.3.2"
+  }
+}
