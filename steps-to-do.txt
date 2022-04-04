@@ -24,3 +24,42 @@ npm install --save-dev standard-version
 "scripts": {
   "release": "standard-version"
 }
+
+//add changes in file using git add and add this type of commit message in coventional way:
+git commit -m "feat(new-feature): add a new-feature to our project"
+
+//and then create 1st release using:
+npm run release
+
+//this does the following:
+The message above does the following:
+
+- Increases the SemVer version number from 1.0.0 to 1.1.0 We added one feature, therefore, MINOR was updated from 0 to 1
+- Creates a CHANGELOG.md file, adding the required content to it
+- Commits the changes above, creating a v1.1.0 tag
+- Prints out a message to push tags and publish our package to npm, if needed
+
+*********************************************
+Adding Commitizen:
+*********************************************
+Instead of writing conventional commits yourself, you can use Commitizen to auto-generate them. 
+Commitizen asks you questions in the command prompt and generates the commits based on your answers.
+
+npm install --save-dev commitizen
+
+//Now, initialize Commitizen to use the conventional changelog adapter
+//(An adapter is a configuration that tells Commitizen to display different kinds of commits in a prompt. ):
+
+npx commitizen init cz-conventional-changelog --save-dev --save-exact
+
+//Now, to use Commitizen, we’ll add an npm script:
+"scripts": {
+    "commit": "cz"
+}
+
+//make sure you create .gitignore and ignore nod modules
+//add changes in file and hit below command to make new commit:
+
+npm run commit
+
+
